@@ -6,6 +6,8 @@ Página Principal
 
 <h3>Mensagens:</h3>
 
-{% for mensagem in mensagens %}
+{% for msg in msgs %}
+    {{ msg.mensagem }} <br>
+{% endfor %}
 
 {% endblock content %}
