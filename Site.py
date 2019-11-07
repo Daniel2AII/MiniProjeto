@@ -22,6 +22,7 @@ def Index():
 
 @app.route("/formulario", methods=['POST', 'GET'])
 def Form():
+    form = MensagemForm()
     if form.validate_on_submit():
         msg1 = MensagemForm()
         msg1.mensagem = form.mensagem.data
