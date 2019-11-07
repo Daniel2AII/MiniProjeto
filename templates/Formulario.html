@@ -4,6 +4,11 @@ Formulário
 
 {% block content %}
 
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.mensagem.label }}: {{ form.mensagem }} <br>
+    {{ form.button }}
+</form>
 
 
 {% endblock content %}
