@@ -1,0 +1,23 @@
+{% block title %} 
+Formulário
+{% endblock title %}
+
+{% block content %}
+
+<form method="POST">
+    {{ form.hidden_tag() }} <br/>
+
+    {{ form.login.label }}
+    {{ form.login }} <br/>
+
+    {{ form.email.label }}
+    {{ form.email }} <br>
+
+    {{ form.senha.label }}
+    {{ form.senha }} <br/>
+
+    {{ form.button }}
+</form>
+
+
+{% endblock content %}
