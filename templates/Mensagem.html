@@ -1,0 +1,20 @@
+{% block title %} 
+Mensagem
+{% endblock title %}
+
+{% block content %}
+
+<form method="POST">
+    {{ form.hidden_tag() }} <br/>
+
+    {{ form.mensagem.label }}
+    {{ form.login }} <br/>
+
+    {{ form.login.label }}
+    {{ form.email }} <br>
+
+    {{ form.button }}
+</form>
+
+
+{% endblock content %}
